@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f8f8f8; /* خليها الخلفية اللي تحبين */
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+/* Silver text animation */
+.silver-text {
+    color: #c0c0c0;
+    background: linear-gradient(90deg, #c0c0c0, #fff, #c0c0c0);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav .logo {
+    font-weight: 700;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c0c0c0;
+}
+
+/* Sections */
+section {
+    padding: 120px 50px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Home Section */
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #c0c0c0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0c0c0;
+    color: #fff;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 2px solid #c0c0c0;
+    padding: 20px;
+    flex: 1 1 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* About & Contact */
+#about, #contact {
+    background-color: #fff;
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#contact .socials {
+    margin-top: 15px;
+}
+
+#contact .socials a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #c0c0c0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#contact .socials a:hover {
+    background-color: #c0c0c0;
+    color: #fff;
+}
